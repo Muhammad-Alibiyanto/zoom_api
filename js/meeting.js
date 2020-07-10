@@ -85,7 +85,7 @@ document.getElementById("setting_button").addEventListener("click", (e) => {
 $(document).ready(function() {
   $("#mute_button").on("click", (e) => {
     e.preventDefault();
-    $("#securityOptionMenu").click();
+    $("#wc-footer-left > div:nth-child(1) > button").click();
     // $("#securityOptionMenu").toggle();
     // $('#myModal').modal('show');
 
@@ -146,9 +146,19 @@ $(document).ready(function() {
   $("#setting_button").on("click", (e) => {
     e.preventDefault();
     $("#dialog-join > div:nth-child(4) > div > div > div:nth-child(1) > button[title='Join Audio by Computer']").click();
+  });
 
-    $("#securityOptionMenu").dropdown();
+  $("#video_button").on("click", (e) => {
+    e.preventDefault();
+    $("#wc-footer-left > div:nth-child(2) > button").click();
+  });
 
-
+  $("#mute_button").on("click", (e) => {
+    e.preventDefault();
+    $("#wc-footer-left > div:nth-child(1) > button").click();
+  });
+  $("#chat_button").on("click", (e) => {
+    e.preventDefault();
+    $("#wc-footer > div:nth-child(2) > button:nth-child(3)").click();
   });
 });
